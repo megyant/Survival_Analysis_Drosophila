@@ -1,2 +1,11 @@
-# Thesis_data_analysis
-Data collected and analysed in my MSc Thesis on 'Determining the effect of olfactory receptors on the survival to Pseudomonas entomophila infection in Drosophila melanogaster'
+# Determining the effect of olfactory receptors on the survival to *Pseudomonas entomophila* infection in *Drosophila melanogaster*
+
+Olfaction plays a critical role in the mediation of interactions between hosts and pathogens. Such role is primarily linked to the evasion of microorganisms through several behavioural adaptations. Yet, more recently, studies have found that olfactory signalling may directly influence immune responses in Drosophila melanogaster. Although such findings have proven to be enlightening when it comes to what we know about the effect of olfactory receptors in immunity, the knowledge on the extent of that effect is still limited.  
+  
+In this MSc we try to expand that knowledge by analysing the consequences of knocking down olfactory receptors in D. melanogaster and infecting them with Pseudomonas entomophila, a pathogenic gam-negative bacterium. We employed RNAi to target 43 olfactory receptor lines and performed multiple survival assays using both males and females, noting differences in overall survival rates in both sexes. We also found that there was sexual dimorphism upon surviving infection in some of the lines. With the survival rates we obtained, and resorting to clustering analysis, we were able to select the most diverging lines for both males and females.  
+  
+To further examine the boarder ramifications of olfactory receptor knockdown, we assessed the reproductive output of the selected divergent lines in females. We aimed to uncover any trade-offs or reproductive strategy in those lines and found that there is a big variation among all lines. Finally, we found that no consistent correlation could be identified between mortality and reproductive output across the selected lines.  
+  
+Our results highlight the diversity of behaviours that can be found in infecting knockdown lines of olfactory receptors, throughout this thesis it is also shown how lacking information about olfactory receptors is. The true extent of the roles that olfaction has are still widely unknown and misunderstood, with this study we aimed to shed some light on the matter.  
+  
+[Click here to read the full thesis](https://repositorio.ulisboa.pt/entities/publication/c651806a-ada0-4a4d-ab27-6e56d82af113)

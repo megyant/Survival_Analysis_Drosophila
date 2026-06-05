@@ -18,7 +18,7 @@ summarise <- dplyr::summarise
 
 ## Read dataset
 
-All <- read.csv("~/Tese/ORs/Datasets/Blocks/All/All.csv")
+All <- read.csv("~datasets/All.csv")
 All_females<-All[All$Sex=="Female",]
 All_males<-All[All$Sex=="Male",]
 

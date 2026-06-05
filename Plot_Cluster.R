@@ -1,4 +1,4 @@
-setwd("~/Tese/ORs/Datasets/Blocks/All/Final_Analysis")
+setwd("/home/mbotelho/tese/datasets")
 
 library(readxl)
 library(ggplot2)
@@ -6,9 +6,8 @@ library(dplyr)
 library(tidyr)
 library(tibble)
 
-#OR_data<-read_excel("OR_clusterResults_alter.xlsx", sheet="female",na="NA")
-OR_data_males<-read_excel("OR_clusterResults_alter.xlsx", sheet="male",na="NA")
-OR_data_females<-read_excel("OR_clusterResults_alter.xlsx", sheet="female",na="NA")
+OR_data_males<-read_excel("OR_ClusterResults_alter.xlsx", sheet="male",na="NA")
+OR_data_females<-read_excel("OR_ClusterResults_alter.xlsx", sheet="female",na="NA")
 
 
 ######################################################

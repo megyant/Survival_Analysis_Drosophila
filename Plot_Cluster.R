@@ -1,0 +1,442 @@
+setwd("~/Tese/ORs/Datasets/Blocks/All/Final_Analysis")
+
+library(readxl)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(tibble)
+
+#OR_data<-read_excel("OR_clusterResults_alter.xlsx", sheet="female",na="NA")
+OR_data_males<-read_excel("OR_clusterResults_alter.xlsx", sheet="male",na="NA")
+OR_data_females<-read_excel("OR_clusterResults_alter.xlsx", sheet="female",na="NA")
+
+
+######################################################
+
+# Assuming `female_data` is the loaded data for females
+# Select relevant columns (blocks and average clusters)
+
+######Females######
+
+cluster_data_f <- OR_data_females[, c("ave_k", "B1_k", "B2_k", "B3_k", "B4_k")]
+colnames(cluster_data_f) <- c("average", "B1", "B2", "B3", "B4")
+rownames(cluster_data_f) <- OR_data_females$OR
+
+cluster_data_f$average <- as.numeric(cluster_data_f$average)
+cluster_data_f$B1 <- as.numeric(cluster_data_f$B1)
+cluster_data_f$B2 <- as.numeric(cluster_data_f$B2)
+cluster_data_f$B3 <- as.numeric(cluster_data_f$B3)
+cluster_data_f$B4 <- as.numeric(cluster_data_f$B4)
+
+cluster_data_f[cluster_data_f == "NA"] <- NA
+
+is.na(cluster_data_f)
+
+# Replace NA values with 0 or another placeholder for the heatmap
+#cluster_data[is.na(cluster_data)] <- 0
+
+# Convert to matrix
+cluster_matrix_f <- as.matrix(cluster_data_f)
+rownames(cluster_matrix_f) <- OR_data_females$OR
+
+
+heatmap_data_f <- as.data.frame(cluster_matrix_f) %>%
+  rownames_to_column(var = "Row") %>% # Convert row names to a column
+  pivot_longer(-Row, names_to = "Column", values_to = "Cluster") # Reshape to long format
+
+# Filter out the 'average' row
+heatmap_data_filtered_f <- heatmap_data_f %>%
+  filter(Row != "average")
+
+#Females
+row_side_colors_f <- tibble(
+  Row = c("Or59a","Or56a", "Or49b", "Or30a", "Or33c"
+        , "Or85b", "Or82a", "Or33b", "Or65c", "Or83b - Orco",
+       "Or98a", "Or94b", "Or22b", "Or83c"), # Example ORs
+  Color = c("#b13a40","#b13a40", "#b13a40", "#b8713c", "#b13a40"
+            , "#54828a","#54828a", "#b13a40","#54828a", "#858e35",
+            "#54828a","#b8713c", "#54828a", "#54828a" ))         # Corresponding colors)
+
+
+
+# Perform the join directly since both datasets have the "Row" column
+heatmap_data_with_colors_f <- heatmap_data_filtered_f %>%
+  left_join(row_side_colors_f, by = "Row")
+
+# Check the resulting dataset
+print(head(heatmap_data_with_colors_f))
+
+
+heatmap_data_filtered <- heatmap_data_f %>%
+  filter(Row != "average")
+
+
+##### MALES ########
+
+cluster_data_m <- OR_data_males[, c("ave_k", "B1_k", "B2_k", "B3_k", "B4_k")]
+colnames(cluster_data_m) <- c("average", "B1", "B2", "B3", "B4")
+rownames(cluster_data_m) <- OR_data_males$OR
+
+cluster_data_m$average <- as.numeric(cluster_data_m$average)
+cluster_data_m$B1 <- as.numeric(cluster_data_m$B1)
+cluster_data_m$B2 <- as.numeric(cluster_data_m$B2)
+cluster_data_m$B3 <- as.numeric(cluster_data_m$B3)
+cluster_data_m$B4 <- as.numeric(cluster_data_m$B4)
+
+cluster_data_m[cluster_data_m == "NA"] <- NA
+
+is.na(cluster_data_m)
+
+# Replace NA values with 0 or another placeholder for the heatmap
+#cluster_data[is.na(cluster_data)] <- 0
+
+# Convert to matrix
+cluster_matrix_m <- as.matrix(cluster_data_m)
+rownames(cluster_matrix_m) <- OR_data_males$OR
+
+
+heatmap_data_m <- as.data.frame(cluster_matrix_m) %>%
+  rownames_to_column(var = "Row") %>% # Convert row names to a column
+  pivot_longer(-Row, names_to = "Column", values_to = "Cluster") # Reshape to long format
+
+# Filter out the 'average' row
+heatmap_data_filtered_m <- heatmap_data_m %>%
+  filter(Row != "average")
+
+#Males
+row_side_colors_m <- tibble(
+  Row = c("Or59a", "Or10a", "Or65c", "Or85f"
+          ,"Or85a", "Or83b - Orco", "Or83c", "Or24a", "Or46aA/Or46aB",
+          "Or30a", "Or94b", "Or1a", "Or67a"), # Example ORs
+  Color = c("#b13a40", "#b13a40", "#b13a40", "#54828a"
+            , "#54828a","#54828a", "#54828a","#54828a", "#b13a40",
+            "#b8713c","#b8713c", "#b13a40", "#54828a" )          # Corresponding colors
+)
+
+# Perform the join directly since both datasets have the "Row" column
+heatmap_data_with_colors_m <- heatmap_data_filtered_m %>%
+  left_join(row_side_colors_m, by = "Row")
+
+# Check the resulting dataset
+print(head(heatmap_data_with_colors_m))
+
+
+heatmap_data_filtered_m <- heatmap_data_m %>%
+  filter(Row != "average")
+
+# Replace NA values with 0 or another placeholder for the heatmap
+#cluster_data[is.na(cluster_data)] <- 0
+
+# Convert to matrix
+cluster_matrix_m <- as.matrix(cluster_data_m)
+rownames(cluster_matrix_m) <- OR_data_males$OR
+
+
+heatmap_data_m <- as.data.frame(cluster_matrix_m) %>%
+  rownames_to_column(var = "Row") %>% # Convert row names to a column
+  pivot_longer(-Row, names_to = "Column", values_to = "Cluster") # Reshape to long format
+
+# Filter out the 'average' row
+heatmap_data_filtered_m <- heatmap_data_m %>%
+  filter(Row != "average")
+
+
+
+########### Not Important ########3
+#ggplot(heatmap_data_filtered, aes(x = Column, y = Row, fill = Cluster)) +
+  geom_tile(color = "white") + # Keep flexible tile dimensions
+  scale_fill_gradientn(
+    colors = c("#90e0ef", "#00b4d8", "#0077b6", "#03045e"),
+    na.value = "#FFADB0", # NAs are shown as white
+    guide = guide_colorbar(title = "Cluster")
+  ) +
+  labs(
+    x = "Average and Block",
+    y = "Knockdown OR Line (Male)"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(
+      angle = 30, # Keep slight rotation for readability
+      hjust = 1,
+      size = 10 # Maintain readable size
+    ),
+    axis.text.y = element_text(
+      size = 8, # Reduce size for Y-axis labels
+      lineheight = 1, # Adjust spacing between rows
+      margin = margin(r = 10) # Prevent label overlap
+    ),
+    axis.title = element_text(size = 12),
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 8),
+    plot.title = element_text(hjust = 0.5, size = 14)
+  ) +
+  scale_y_discrete(expand = expansion(add = 0.5)) # Add spacing for taller rectangles
+
+  
+
+
+
+
+##############Actual map#############
+  
+##Females
+
+# Prepare the heatmap matrix
+heatmap_matrix_f <- reshape2::acast(heatmap_data_filtered, Row ~ Column, value.var = "Cluster")
+row_colors_f <- row_side_colors_f$Color[match(rownames(heatmap_matrix_f), row_side_colors_f$Row)]
+
+
+
+library(ComplexHeatmap)
+library(circlize)
+
+# Ensure the heatmap_matrix rows and colors are fully matched
+all_rows_f <- rownames(heatmap_matrix_f) # All rows in heatmap
+row_colors_f <- setNames(row_side_colors_f$Color, row_side_colors_f$Row) # Map from row_side_colors
+
+# Fill missing rows with a default color (white instead of gray)
+default_color <- "white"
+mapped_colors_f <- row_colors_f[all_rows_f] # Align with heatmap_matrix rows
+mapped_colors_f[is.na(mapped_colors_f)] <- default_color # Assign white to unmatched rows
+
+# Replace `NA` values in the heatmap matrix with 0 (visually treat them as NA)
+heatmap_matrix_f[is.na(heatmap_matrix_f)] <- 0
+
+# Create Row Annotation without label
+row_annotation_f <- rowAnnotation(
+  SideColor = anno_simple(
+    rownames(heatmap_matrix_f),
+    col = setNames(mapped_colors_f, all_rows_f) # Ensure complete mapping
+  ),
+  width = unit(4, "mm"), # Adjust annotation width
+  annotation_name_gp = gpar(fontsize = 0) # Hide the "Side Color" label completely
+)
+
+# Define custom colors for the heatmap
+col_fun <- colorRamp2(
+  c(0, 1, 2, 3, 4),         # Explicitly map 0 (NA) and other values
+  c("#d8b2b2", "#b2d8d8", "#66b2b2", "#008080", "#006666") # Colors for each range
+)
+
+# Plot the Heatmap with Custom NA Coloring and Label
+females_heatmap<-Heatmap(
+  heatmap_matrix_f,
+  name = "Cluster",
+  col = col_fun,
+  clustering_distance_rows = NULL, # Remove row dendrogram
+  clustering_distance_columns = NULL, # Remove column dendrogram
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  row_names_side = "left",
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  left_annotation = row_annotation_f,
+  heatmap_legend_param = list(
+    title = "Cluster",
+    at = c(0, 1, 2, 3, 4), # Legend ticks
+    labels = c("NA", "1", "2", "3", "4") # Replace 0 with "NA"
+  ),
+  rect_gp = gpar(col = "white", lwd = 0.5), # Add row gridlines (thin horizontal lines)
+  border = FALSE, # Remove the outer border entirely
+  row_names_gp = gpar(fontsize = 8), # Reduce font size for y-axis labels
+  column_names_gp = gpar(fontsize = 10) # Adjust column labels for readability
+)
+
+
+females_heatmap
+
+## Save
+# Save as PDF with dimensions in cm
+pdf("~/Tese/Escrita/Plots/females_heatmap.pdf", width = 27 / 2.54, height = 25 / 2.54) # Convert cm to inches
+draw(females_heatmap)
+dev.off()
+
+# Save as PNG with dimensions in cm
+png("~/Tese/Escrita/Plots/females_heatmap.png", 
+    width = 27, height = 25, units = "cm", res = 300) # Set resolution to 300 dpi
+draw(females_heatmap)
+dev.off()
+
+
+## Save with label
+
+# Open a PDF device
+pdf("females_heatmap_with_label.pdf", width = 27 / 2.54, height = 25 / 2.54) # Convert cm to inches
+
+# Draw the heatmap
+draw(females_heatmap)
+
+# Add the label (e.g., "A") to the top-left corner
+grid.text("A", x = unit(0.02, "npc"), y = unit(0.98, "npc"),
+          just = c("left", "top"), gp = gpar(fontsize = 14, fontface = "bold"))
+
+# Close the device
+dev.off()
+
+png("females_heatmap_with_label.png", width = 27, height = 25, units = "cm", res = 300)
+
+# Draw the heatmap
+draw(females_heatmap)
+
+# Add the label (e.g., "A") to the top-left corner
+grid.text("A", x = unit(0.02, "npc"), y = unit(0.98, "npc"),
+          just = c("left", "top"), gp = gpar(fontsize = 14, fontface = "bold"))
+
+# Close the device
+dev.off()
+
+
+
+
+
+#### MALES #####
+
+# Prepare the heatmap matrix
+heatmap_matrix_m <- reshape2::acast(heatmap_data_filtered_m, Row ~ Column, value.var = "Cluster")
+row_colors_m <- row_side_colors_m$Color[match(rownames(heatmap_matrix_m), row_side_colors_f$Row)]
+
+
+
+library(ComplexHeatmap)
+library(circlize)
+
+# Ensure the heatmap_matrix rows and colors are fully matched
+all_rows_m <- rownames(heatmap_matrix_m) # All rows in heatmap
+row_colors_m <- setNames(row_side_colors_m$Color, row_side_colors_m$Row) # Map from row_side_colors
+
+# Fill missing rows with a default color (white instead of gray)
+default_color <- "white"
+mapped_colors_m <- row_colors_m[all_rows_m] # Align with heatmap_matrix rows
+mapped_colors_f[is.na(mapped_colors_m)] <- default_color # Assign white to unmatched rows
+
+# Replace `NA` values in the heatmap matrix with 0 (visually treat them as NA)
+heatmap_matrix_m[is.na(heatmap_matrix_m)] <- 0
+
+# Create Row Annotation without label
+row_annotation_m <- rowAnnotation(
+  SideColor = anno_simple(
+    rownames(heatmap_matrix_m),
+    col = setNames(mapped_colors_m, all_rows_m) # Ensure complete mapping
+  ),
+  width = unit(4, "mm"), # Adjust annotation width
+  annotation_name_gp = gpar(fontsize = 0) # Hide the "Side Color" label completely
+)
+
+# Define custom colors for the heatmap
+col_fun <- colorRamp2(
+  c(0, 1, 2, 3, 4),         # Explicitly map 0 (NA) and other values
+  c("#d8b2b2", "#b2d8d8", "#66b2b2", "#008080", "#006666") # Colors for each range
+)
+
+# Plot the Heatmap with Custom NA Coloring and Label
+males_heatmap<-Heatmap(
+  heatmap_matrix_m,
+  name = "Cluster",
+  col = col_fun,
+  clustering_distance_rows = NULL, # Remove row dendrogram
+  clustering_distance_columns = NULL, # Remove column dendrogram
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  row_names_side = "left",
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  left_annotation = row_annotation_m,
+  heatmap_legend_param = list(
+    title = "Cluster",
+    at = c(0, 1, 2, 3, 4), # Legend ticks
+    labels = c("NA", "1", "2", "3", "4") # Replace 0 with "NA"
+  ),
+  rect_gp = gpar(col = "white", lwd = 0.5), # Add row gridlines (thin horizontal lines)
+  border = FALSE, # Remove the outer border entirely
+  row_names_gp = gpar(fontsize = 8), # Reduce font size for y-axis labels
+  column_names_gp = gpar(fontsize = 10) # Adjust column labels for readability
+)
+plot(males_heatmap)
+
+    
+# Save as PDF with dimensions in cm
+pdf("~/Tese/Escrita/Plots/males_heatmap.pdf", width = 27 / 2.54, height = 25 / 2.54) # Convert cm to inches
+draw(males_heatmap)
+dev.off()
+
+# Save as PNG with dimensions in cm
+png("~/Tese/Escrita/Plots/males_heatmap.png", 
+    width = 27, height = 25, units = "cm", res = 300) # Set resolution to 300 dpi
+draw(males_heatmap)
+dev.off()
+
+
+## Save with label
+
+# Open a PDF device
+pdf("males_heatmap_with_label.pdf", width = 27 / 2.54, height = 25 / 2.54) # Convert cm to inches
+
+# Draw the heatmap
+draw(males_heatmap)
+
+# Add the label (e.g., "A") to the top-left corner
+grid.text("B", x = unit(0.02, "npc"), y = unit(0.98, "npc"),
+          just = c("left", "top"), gp = gpar(fontsize = 14, fontface = "bold"))
+
+# Close the device
+dev.off()
+
+png("males_heatmap_with_label.png", width = 27, height = 25, units = "cm", res = 300)
+
+# Draw the heatmap
+draw(males_heatmap)
+
+# Add the label (e.g., "A") to the top-left corner
+grid.text("B", x = unit(0.02, "npc"), y = unit(0.98, "npc"),
+          just = c("left", "top"), gp = gpar(fontsize = 14, fontface = "bold"))
+
+# Close the device
+dev.off()
+
+
+                                    
+
+    
+    
+
+    
+    
+    
+
+###################################################
+
+library(ggplot2)
+
+# Create the scatter plot
+ggplot(OR_data, aes(x = reorder(OR, ave_Male), y = ave_Male, color = as.factor(ave_k))) +
+  geom_point(size = 3) +
+  labs(title = "Average Mortality of ORs in Males",
+       x = "Olfactory Receptor (OR)",
+       y = "Average Mortality",
+       color = "Cluster")  + theme_bw()+
+  scale_color_manual(values = c("4" = "#03045e", "3" = "#0077b6", "2" = "#00b4d8", "1" = "#90e0ef",
+                                "average"="red")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+########################################################
+
+# Add a column for the frequency of high/low clusters across blocks
+OR_data$HighClusterFrequency <- rowSums(OR_data[, c("ave_k", "B1_k", "B2_k", "B3_k", "B4_k")] == 4)
+OR_data$LowClusterFrequency <- rowSums(OR_data[, c("ave_k", "B1_k", "B2_k", "B3_k", "B4_k")] == 1)
+
+# Create the bubble plot
+ggplot(OR_data, aes(x = reorder(OR, ave_Male), y = ave_Male, size = HighClusterFrequency, color = "High Mortality")) +
+  geom_point(alpha = 0.6) +
+  geom_point(aes(size = LowClusterFrequency, color = "Low Mortality")) +
+  scale_color_manual(values = c("High Mortality" = "#db504a", "Low Mortality" = "#084c61")) +
+  labs(title = "Cluster Frequency vs Average Mortality for ORs",
+       x = "Olfactory Receptor (OR)",
+       y = "Average Mortality",
+       size = "Cluster Frequency") + theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+
+
+

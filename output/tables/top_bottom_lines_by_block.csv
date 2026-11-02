@@ -1,0 +1,269 @@
+Sex,Block,OR,survival,n,group
+Female,1,Or67a,0.9,10,top 10%
+Female,1,Or69aA/Or69aB,0.8888888888888888,54,top 10%
+Female,1,Or98b,0.8823529411764706,17,top 10%
+Female,1,Or82a,0.868421052631579,38,top 10%
+Female,1,Or30a,0.8571428571428571,28,top 20%
+Female,1,Or83b - Orco,0.835820895522388,67,top 20%
+Female,1,Or22a,0.8253968253968254,63,top 20%
+Female,1,Or9a,0.825,40,top 20%
+Female,1,Or22b,0.8235294117647058,34,middle
+Female,1,Or43b,0.8181818181818182,44,middle
+Female,1,Or49a,0.8181818181818182,33,middle
+Female,1,Or85d,0.8181818181818182,44,middle
+Female,1,Or85b,0.8103448275862069,58,middle
+Female,1,Or1a,0.8055555555555556,36,middle
+Female,1,Or33a,0.8,10,middle
+Female,1,Or94b,0.8,20,middle
+Female,1,Or71a,0.7878787878787878,33,middle
+Female,1,Or85a,0.7837837837837838,37,middle
+Female,1,Or47a,0.782608695652174,46,middle
+Female,1,Or49b,0.7692307692307693,26,middle
+Female,1,Or85c,0.7666666666666667,30,middle
+Female,1,Or83a,0.7611940298507462,67,middle
+Female,1,Or98a,0.7380952380952381,42,middle
+Female,1,Or10a,0.7058823529411765,17,middle
+Female,1,Or59c,0.6923076923076923,13,middle
+Female,1,Or63a,0.6666666666666666,24,middle
+Female,1,Or42b,0.6578947368421053,38,middle
+Female,1,Or42a,0.6363636363636364,33,middle
+Female,1,Or35a,0.6341463414634146,41,middle
+Female,1,Or13a,0.625,24,middle
+Female,1,Or24a,0.6190476190476191,21,middle
+Female,1,Or46aA/Or46aB,0.5789473684210527,38,bottom 20%
+Female,1,Or2a,0.5757575757575758,33,bottom 20%
+Female,1,Or56a,0.5454545454545454,22,bottom 20%
+Female,1,Or33c,0.45,20,bottom 20%
+Female,1,Or59a,0.42857142857142855,21,bottom 10%
+Female,1,Or7a,0.42105263157894735,19,bottom 10%
+Female,1,Or65c,0.38461538461538464,13,bottom 10%
+Female,1,Or33b,0.3333333333333333,30,bottom 10%
+Female,2,Or47a,0.9,10,top 10%
+Female,2,Or63a,0.9,10,top 10%
+Female,2,Or98b,0.9,10,top 10%
+Female,2,Or24a,0.8888888888888888,9,top 20%
+Female,2,Or98a,0.8888888888888888,9,top 20%
+Female,2,Or83a,0.8666666666666667,30,top 20%
+Female,2,Or83c,0.8666666666666667,30,top 20%
+Female,2,Or71a,0.8648648648648649,37,middle
+Female,2,Or22b,0.8571428571428571,7,middle
+Female,2,Or85b,0.8571428571428571,7,middle
+Female,2,Or43b,0.85,20,middle
+Female,2,Or2a,0.8421052631578947,19,middle
+Female,2,Or13a,0.8333333333333334,12,middle
+Female,2,Or85a,0.825,40,middle
+Female,2,Or42a,0.8,20,middle
+Female,2,Or49b,0.8,10,middle
+Female,2,Or7a,0.8,30,middle
+Female,2,Or83b - Orco,0.8,10,middle
+Female,2,Or85f,0.8,10,middle
+Female,2,Or30a,0.7692307692307693,13,middle
+Female,2,Or49a,0.7407407407407407,27,middle
+Female,2,Or65c,0.7333333333333333,30,middle
+Female,2,Or67a,0.7333333333333333,15,middle
+Female,2,Or22a,0.7142857142857143,49,bottom 20%
+Female,2,Or33b,0.7,10,bottom 20%
+Female,2,Or59a,0.7,10,bottom 20%
+Female,2,Or35a,0.6875,16,bottom 10%
+Female,2,Or56a,0.4,20,bottom 10%
+Female,2,Or85d,0.4,10,bottom 10%
+Female,3,Or59c,0.9090909090909091,11,top 10%
+Female,3,Or22b,0.9,30,top 10%
+Female,3,Or24a,0.9,10,top 10%
+Female,3,Or42b,0.9,10,top 10%
+Female,3,Or85d,0.9,30,top 10%
+Female,3,Or10a,0.8666666666666667,15,top 20%
+Female,3,Or85a,0.8666666666666667,30,top 20%
+Female,3,Or94b,0.8666666666666667,15,top 20%
+Female,3,Or83b - Orco,0.8333333333333334,30,middle
+Female,3,Or98a,0.8333333333333334,30,middle
+Female,3,Or63a,0.8125,16,middle
+Female,3,Or1a,0.8,30,middle
+Female,3,Or33b,0.8,30,middle
+Female,3,Or49a,0.8,25,middle
+Female,3,Or49b,0.8,20,middle
+Female,3,Or65c,0.8,20,middle
+Female,3,Or67a,0.8,15,middle
+Female,3,Or98b,0.8,20,middle
+Female,3,Or71a,0.7857142857142857,28,middle
+Female,3,Or33a,0.78,50,middle
+Female,3,Or85c,0.7666666666666667,30,middle
+Female,3,Or46aA/Or46aB,0.7647058823529411,17,middle
+Female,3,Or47a,0.75,20,middle
+Female,3,Or82a,0.75,20,middle
+Female,3,Or85b,0.75,40,middle
+Female,3,Or83a,0.7446808510638298,47,middle
+Female,3,Or2a,0.7333333333333333,30,middle
+Female,3,Or7a,0.7333333333333333,30,middle
+Female,3,Or33c,0.7142857142857143,49,middle
+Female,3,Or9a,0.7037037037037037,27,middle
+Female,3,Or13a,0.7,10,bottom 20%
+Female,3,Or69aA/Or69aB,0.7,30,bottom 20%
+Female,3,Or35a,0.6896551724137931,29,bottom 20%
+Female,3,Or30a,0.6666666666666666,27,bottom 20%
+Female,3,Or56a,0.6666666666666666,30,bottom 20%
+Female,3,Or22a,0.6,20,bottom 10%
+Female,3,Or85f,0.6,10,bottom 10%
+Female,3,Or43b,0.5384615384615384,26,bottom 10%
+Female,3,Or59a,0.4,10,bottom 10%
+Female,4,Or63a,0.9,10,top 10%
+Female,4,Or82a,0.9,10,top 10%
+Female,4,Or83c,0.9,30,top 10%
+Female,4,Or85b,0.9,30,top 10%
+Female,4,Or33a,0.8823529411764706,17,top 20%
+Female,4,Or94b,0.8666666666666667,30,top 20%
+Female,4,Or98a,0.8666666666666667,30,top 20%
+Female,4,Or85c,0.85,20,middle
+Female,4,Or7a,0.84,25,middle
+Female,4,Or42a,0.8333333333333334,30,middle
+Female,4,Or67d,0.8333333333333334,30,middle
+Female,4,Or83b - Orco,0.8333333333333334,30,middle
+Female,4,Or1a,0.8275862068965517,29,middle
+Female,4,Or83a,0.825,40,middle
+Female,4,Or22b,0.8,30,middle
+Female,4,Or49a,0.8,20,middle
+Female,4,Or65c,0.8,10,middle
+Female,4,Or85d,0.8,10,middle
+Female,4,Or30a,0.7931034482758621,29,middle
+Female,4,Or22a,0.78,50,middle
+Female,4,Or43b,0.7777777777777778,36,middle
+Female,4,Or2a,0.7647058823529411,17,middle
+Female,4,Or35a,0.75,20,middle
+Female,4,Or69aA/Or69aB,0.7333333333333333,45,middle
+Female,4,Or33b,0.725,40,middle
+Female,4,Or67c,0.7142857142857143,7,middle
+Female,4,Or33c,0.7083333333333334,24,middle
+Female,4,Or71a,0.7,30,middle
+Female,4,Or85f,0.6842105263157895,19,bottom 20%
+Female,4,Or13a,0.6,15,bottom 10%
+Female,4,Or47a,0.6,10,bottom 10%
+Female,4,Or85a,0.6,30,bottom 10%
+Female,4,Or56a,0.5833333333333334,12,bottom 10%
+Female,4,Or98b,0.55,20,bottom 10%
+Female,4,Or42b,0.5333333333333333,30,bottom 10%
+Male,1,Or49a,0.9,10,top 10%
+Male,1,Or98a,0.9,10,top 10%
+Male,1,Or83a,0.8666666666666667,30,top 10%
+Male,1,Or85a,0.8666666666666667,30,top 10%
+Male,1,Or22a,0.85,20,top 20%
+Male,1,Or49b,0.85,20,top 20%
+Male,1,Or71a,0.8333333333333334,30,top 20%
+Male,1,Or82a,0.8214285714285714,28,top 20%
+Male,1,Or43b,0.8076923076923077,26,middle
+Male,1,Or33a,0.8,20,middle
+Male,1,Or33c,0.8,10,middle
+Male,1,Or56a,0.8,10,middle
+Male,1,Or63a,0.8,10,middle
+Male,1,Or85d,0.8,40,middle
+Male,1,Or83b - Orco,0.7959183673469388,49,middle
+Male,1,Or69aA/Or69aB,0.775,40,middle
+Male,1,Or85b,0.7631578947368421,38,middle
+Male,1,Or33b,0.7368421052631579,19,middle
+Male,1,Or85c,0.7333333333333333,30,middle
+Male,1,Or24a,0.7,10,middle
+Male,1,Or30a,0.7,10,middle
+Male,1,Or59c,0.7,10,middle
+Male,1,Or67a,0.6666666666666666,18,middle
+Male,1,Or35a,0.6551724137931034,29,middle
+Male,1,Or94b,0.6538461538461539,26,middle
+Male,1,Or46aA/Or46aB,0.65,20,middle
+Male,1,Or1a,0.6,40,bottom 20%
+Male,1,Or22b,0.6,30,bottom 20%
+Male,1,Or2a,0.6,20,bottom 20%
+Male,1,Or42a,0.6,15,bottom 20%
+Male,1,Or42b,0.6,10,bottom 20%
+Male,1,Or65c,0.6,10,bottom 20%
+Male,1,Or7a,0.6,10,bottom 20%
+Male,1,Or9a,0.55,20,bottom 20%
+Male,1,Or47a,0.5,18,bottom 10%
+Male,1,Or13a,0.4,10,bottom 10%
+Male,1,Or10a,0.3333333333333333,9,bottom 10%
+Male,1,Or59a,0.3,10,bottom 10%
+Male,2,Or2a,0.9,20,top 10%
+Male,2,Or67a,0.9,20,top 10%
+Male,2,Or7a,0.9,10,top 10%
+Male,2,Or85a,0.9,10,top 10%
+Male,2,Or85f,0.9,10,top 10%
+Male,2,Or13a,0.8947368421052632,19,middle
+Male,2,Or24a,0.8888888888888888,9,middle
+Male,2,Or47a,0.8888888888888888,18,middle
+Male,2,Or56a,0.8888888888888888,9,middle
+Male,2,Or94b,0.8888888888888888,9,middle
+Male,2,Or33c,0.875,8,middle
+Male,2,Or83c,0.8666666666666667,30,middle
+Male,2,Or22b,0.8571428571428571,7,middle
+Male,2,Or42a,0.8461538461538461,13,middle
+Male,2,Or22a,0.8333333333333334,18,middle
+Male,2,Or49b,0.8,20,middle
+Male,2,Or59a,0.8,10,middle
+Male,2,Or85b,0.8,10,middle
+Male,2,Or82a,0.75,4,bottom 20%
+Male,2,Or83a,0.75,20,bottom 20%
+Male,2,Or71a,0.7,20,bottom 10%
+Male,2,Or43b,0.6,10,bottom 10%
+Male,2,Or85d,0.5714285714285714,7,bottom 10%
+Male,3,Or22b,0.9,20,top 10%
+Male,3,Or35a,0.9,10,top 10%
+Male,3,Or67a,0.9,10,top 10%
+Male,3,Or85d,0.9,10,top 10%
+Male,3,Or94b,0.9,10,top 10%
+Male,3,Or85a,0.875,8,top 20%
+Male,3,Or42b,0.8571428571428571,7,top 20%
+Male,3,Or71a,0.8571428571428571,7,top 20%
+Male,3,Or85f,0.8571428571428571,7,top 20%
+Male,3,Or83b - Orco,0.85,20,middle
+Male,3,Or98b,0.85,20,middle
+Male,3,Or24a,0.8421052631578947,19,middle
+Male,3,Or69aA/Or69aB,0.825,40,middle
+Male,3,Or85b,0.8148148148148148,27,middle
+Male,3,Or10a,0.8125,16,middle
+Male,3,Or1a,0.8,20,middle
+Male,3,Or2a,0.8,20,middle
+Male,3,Or30a,0.8,10,middle
+Male,3,Or56a,0.8,30,middle
+Male,3,Or63a,0.8,10,middle
+Male,3,Or65c,0.8,10,middle
+Male,3,Or7a,0.8,10,middle
+Male,3,Or83c,0.8,20,middle
+Male,3,Or85c,0.8,20,middle
+Male,3,Or9a,0.8,20,middle
+Male,3,Or98a,0.7931034482758621,29,middle
+Male,3,Or82a,0.7894736842105263,19,middle
+Male,3,Or33c,0.7666666666666667,30,bottom 20%
+Male,3,Or46aA/Or46aB,0.75,8,bottom 20%
+Male,3,Or49a,0.7333333333333333,15,bottom 20%
+Male,3,Or33b,0.7,20,bottom 10%
+Male,3,Or33a,0.5666666666666667,30,bottom 10%
+Male,3,Or22a,0.5555555555555556,9,bottom 10%
+Male,3,Or59a,0.5,6,bottom 10%
+Male,4,Or22b,0.9,20,top 10%
+Male,4,Or24a,0.9,10,top 10%
+Male,4,Or43b,0.9,10,top 10%
+Male,4,Or83c,0.9,20,top 10%
+Male,4,Or33b,0.85,20,top 20%
+Male,4,Or83b - Orco,0.85,20,top 20%
+Male,4,Or85d,0.85,20,top 20%
+Male,4,Or49b,0.8333333333333334,30,middle
+Male,4,Or94b,0.8333333333333334,18,middle
+Male,4,Or2a,0.8235294117647058,17,middle
+Male,4,Or49a,0.8235294117647058,17,middle
+Male,4,Or22a,0.8,20,middle
+Male,4,Or30a,0.8,10,middle
+Male,4,Or33c,0.8,10,middle
+Male,4,Or35a,0.8,30,middle
+Male,4,Or56a,0.8,10,middle
+Male,4,Or83a,0.8,20,middle
+Male,4,Or85a,0.8,10,middle
+Male,4,Or85f,0.8,10,middle
+Male,4,Or71a,0.7692307692307693,26,middle
+Male,4,Or82a,0.7666666666666667,30,middle
+Male,4,Or13a,0.75,20,bottom 20%
+Male,4,Or69aA/Or69aB,0.75,16,bottom 20%
+Male,4,Or7a,0.75,20,bottom 20%
+Male,4,Or98b,0.75,12,bottom 20%
+Male,4,Or98a,0.7333333333333333,30,bottom 20%
+Male,4,Or65c,0.7,20,bottom 10%
+Male,4,Or85b,0.7,10,bottom 10%
+Male,4,Or42a,0.6,10,bottom 10%
+Male,4,Or47a,0.6,30,bottom 10%
+Male,4,Or42b,0.4,10,bottom 10%

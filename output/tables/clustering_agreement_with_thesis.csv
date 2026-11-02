@@ -1,0 +1,11 @@
+Sex,column,lines,same_cluster,agreement
+Female,B1,39,39,1
+Female,B2,29,26,0.9
+Female,B3,39,37,0.95
+Female,B4,35,33,0.94
+Female,average,43,39,0.91
+Male,B1,38,36,0.95
+Male,B2,23,22,0.96
+Male,B3,34,34,1
+Male,B4,31,15,0.48
+Male,average,41,39,0.95

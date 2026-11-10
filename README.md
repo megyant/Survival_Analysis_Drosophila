@@ -5,7 +5,7 @@ Analysis code and data for my MSc thesis in Evolution and Development
 
 **Thesis:** *Determining the effect of olfactory receptors on the survival to
 Pseudomonas entomophila infection in Drosophila melanogaster*
-([PDF](thesis/MargaridaAntunes_MSc_thesis_provisional.pdf))
+([PDF](thesis/MargaridaAntunes_MSc_thesis.pdf))
 
 ## Question
 
@@ -133,6 +133,16 @@ files were checked by hand after `01_prepare_survival_data.R`.
   separate the extremes more clearly.
 - **Recomputed clusters agree with the thesis clusters in 90–100% of lines** for
   every column except male block 4 (48%) (`output/tables/clustering_agreement_with_thesis.csv`).
+- **Sex differences differ from the thesis.** The thesis (section 3.2) reports four
+  lines (Or33b, Or33c, Or56a, Or7a) with male hazard ratios of 0.16–0.25, from blocks 1–3.
+  Re-fitting a single `OR × Sex` model on those blocks gives similar (not identical)
+  values; in that model each coefficient compares a line's sex difference with that of
+  the reference line (Or10a), not males with females within the line. This repository
+  instead fits one Cox model per line, `Surv ~ Sex + strata(Block)`, on all four blocks
+  (`03_sex_differences.R`), which gives the two candidate lines above. Or56a is the only
+  line significant under every model.
+- **The thesis methods mention three blocks; the analysis here uses four.** The thesis
+  survival models used blocks 1–3, while its clustering (Figure 3.3) already used all four.
 - **The fecundity (reproductive output) analysis is not in this repository.**
 
 ## Credits
